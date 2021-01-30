@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background" />
+
+    <!--设置use_type="use_padding_top"相当于paddingTop状态栏的高度-->
+    <com.zhengtu.statusbarlibrary.StatusBarHeightView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:use_type="use_padding_top">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app_name" />
+
+    </com.zhengtu.statusbarlibrary.StatusBarHeightView>
+
+</RelativeLayout>
